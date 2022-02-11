@@ -14,7 +14,20 @@ body {
   height: 100px;
 }
 
-.inline {
-  align-content: center;
+.flex-box {
+  display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.randButton {
+  padding: 10px 24px;
+  width: 100px;
+  height: 100px;
+}
+
+.color1 {
+  padding: 10px 24px;
+  width: 100px;
+  height: 100px;
 }

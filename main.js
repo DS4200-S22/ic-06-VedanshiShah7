@@ -14,13 +14,12 @@ function button1Clicked() {
     let newRandNum = 'Your new random number is: ' + randNum + '!';
     let randomNum = document.getElementById('random_num');
     randomNum.innerHTML = newRandNum;
-
     console.log("Button 1 was clicked"); 
 }
 
+const color1 = document.getElementById('circle_color');
+color1.addEventListener('click', button2Clicked);
 function button2Clicked() {
-    // if color
-    let color = document.getElementsByClassId('circle_color').style;
-    // color.innerHTML = color2; 
-    console.log(color);
+    color1.classList.toggle('color2');
+    console.log('color updated');
 }
