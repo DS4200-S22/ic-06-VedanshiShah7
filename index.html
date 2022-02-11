@@ -3,6 +3,9 @@
 
 <head>
     <meta charset=utf-8/>
+    <link rel="stylesheet" href="style.css">
+    
+    <title></title>
 </head>
 
 
@@ -10,12 +13,24 @@
 
     <h1>ic-07 - Intro to JavaScript</h1>
 
-    <button type="button">Button 1</button>
+    <button type="button" onClick="button1Clicked()">Button 1</button>
 
-    <div id="random_num">
+    <div id="random_num" class="random">
         When Button 1 is clicked, a random number should appear here. 
     </div>
 
+    <div class="inline">
+        <button type="button" onClick="button2Clicked()">Button 2</button>
+
+        <div id="circle_color" class="color">
+            <svg>
+                <circle cx="100" cy="100" r="50"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- same folder as the .html file and this is used to connect the two-->
 </body>
 
 </html>
