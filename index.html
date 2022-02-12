@@ -21,15 +21,18 @@
         </div>
     </div>
 
-    <div class="flex-box">
-        <button class="color1" type="button" onClick="button2Clicked()">Button 2</button>
+    <div class="container">
+        <div class="item">
+            <button type="button" onClick="button2Clicked()">Button 2</button>
+        </div>
 
-        <div id="circle_color" class="color">
-            <svg>
-                <circle cx="50" cy="50" r="50"></circle>
+        <div class="item">
+            <svg width="200" height="200" viewBox="0 0 200 200"> 
+                <circle id="c" class="blue" cx="100" cy="100" r="80" />
             </svg>
         </div>
     </div>
+
     
     <script src="main.js"></script>
     <!-- same folder as the .html file and this is used to connect the two-->

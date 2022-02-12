@@ -17,9 +17,11 @@ function button1Clicked() {
     console.log("Button 1 was clicked"); 
 }
 
-const color1 = document.getElementById('circle_color');
-color1.addEventListener('click', button2Clicked);
 function button2Clicked() {
-    color1.classList.toggle('color2');
-    console.log('color updated');
+    let curr_color = document.getElementById("c").getAttribute("class"); 
+    if (curr_color == "blue") {
+        document.getElementById("c").setAttribute("class", "green"); 
+    } else {
+        document.getElementById("c").setAttribute("class", "blue"); 
+    }
 }
